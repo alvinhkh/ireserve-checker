@@ -1,0 +1,34 @@
+/*
+ * iReserve Checker
+ * Copyright (c) 2014, AlvinHKH
+ * http://alvinhkh.com
+*/
+* {
+    margin: 0;
+    padding: 0;
+}
+#container {
+    width: 800px;
+    margin: 0 auto;
+}
+#container table {
+    width: 100%;
+}
+#container table td:not(:first-child) {
+    width: 15%;
+    text-align: center;
+}
+#container table td {
+    line-height: 28px;
+    border-bottom: 1px solid black
+}
+#container table tr:last-child td {
+    border: 0
+}
+#container tr.true td:first-child, #container td.true {
+    background-color: green;
+    color: white
+}
+#container tr.false td:first-child, #container td.false {
+    color: grey
+}
